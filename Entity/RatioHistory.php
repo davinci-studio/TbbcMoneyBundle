@@ -24,6 +24,10 @@ class RatioHistory
      * @var \DateTime
      */
     protected $savedAt;
+    /**
+     * @var integer
+     */
+    private $nbpTableNumber;
 
     /**
      * @param string $currencyCode
@@ -105,5 +109,17 @@ class RatioHistory
         return $this->savedAt;
     }
 
+    /**
+     * @param $nbpTableNumber
+     */
+    public function setNbpTableNumber($nbpTableNumber){
+        $this->nbpTableNumber = $nbpTableNumber;
+    }
 
+    /**
+     * @return int
+     */
+    public function getNbpTableNumber(){
+        return $this->nbpTableNumber;
+    }
 } 

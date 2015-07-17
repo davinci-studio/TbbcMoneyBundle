@@ -9,5 +9,6 @@
         <field name="referenceCurrencyCode" type="string" column="reference_currency_code" nullable="false" length="3"/>
         <field name="ratio" type="float" column="ratio" nullable="false" length="255"/>
         <field name="savedAt" type="datetime" column="saved_at" nullable="false"/>
+        <field name="nbpTableNumber" type="integer" />
     </entity>
 </doctrine-mapping>
